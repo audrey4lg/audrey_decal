@@ -1,0 +1,61 @@
+breakfast = ['french toast', 'eggs', 'pancakes', 'bacon', 'sausage']
+print(breakfast)
+
+#zero index so start counting at zero when accessing list
+print(breakfast[1])
+
+len(breakfast) #length of list
+for i in range(len(breakfast)):
+    print(breakfast[i])
+
+#negetave numbers are used to access from the back of the list, there is no zero index this way
+print(breakfast[-1])
+
+#changing, if we wanted to get rid of eggs
+breakfast[1] = 'cereal'
+print (breakfast)
+
+#insert
+breakfast.insert(1, 'leftover')
+print(breakfast)
+
+#Slicing lists
+newlist = [1, 2, 3, 4, 5]
+num = newlist[1:4]
+print (num)
+
+#Striding Lists
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print (nums[::1])
+print (nums[1:8:2])
+print (nums[::-1])
+
+#Looping Lists
+for i in newlist:
+    print(i)
+for food in breakfast:
+    print(food)
+
+#DICTIONARIES
+charlie = {'name' : 'charlie', 'age' : 22, 'fav_color' : 'orange'}
+#Accessing elements, thru keys
+print(charlie['name'])
+#accessing elements, thru loops
+charlie_keys = charlie.keys()
+print (charlie_keys)
+for i in charlie_keys:
+    print(i)
+
+for i in charlie_keys:
+    print(charlie[i])
+
+charlie_items = charlie.items()
+for i, d in charlie_items:
+    print(i, d)
+
+#modifying
+charlie['fav_color'] = 'gray-blue'
+print (charlie)
+#to add things its same as modifying
+charlie ['hometown'] = 'Winters'
+print(charlie)
